@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emailer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            background-color: white;
+            width: 626px;
+            height: auto;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .yellowband {
+            width: 626px;
+            height: 70px;
+            background-color: white;
+            text-align: center;
+            line-height: 70px;
+            border-bottom: 1px solid #eee;
+        }
+        .yellowband h1 {
+            color: #555;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0;
+        }
+        .maincontainer {
+            width: 626px;
+            height: 180px;
+            margin: auto;
+            position: relative;
+            background-color: #FFCF33;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .offer-text {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .button {
+            width: 120px;
+            height: 35px;
+            background-color: transparent;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 35px;
+            font-size: 14px;
+            border: 2px solid white;
+        }
+        .button a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2px;
+        }
+        .product {
+            width: calc(50% - 4px);
+            height: 170px;
+            margin: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+        .product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .pink-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: #FF4F87;
+            color: white;
+            padding: 10px;
+        }
+        .collection-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .collection-subtitle {
+            font-size: 12px;
+            max-width: 180px;
+        }
+        .discount-box {
+            width: 100%;
+            height: 100%;
+            background-color: #514BFF;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .discount-amount {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .discount-text {
+            font-size: 12px;
+            text-align: center;
+            max-width: 200px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        .follow-text {
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #eee;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+        }
+        .divider {
+            height: 1px;
+            background-color: #eee;
+            margin: 20px 0;
+        }
+        .footer-text {
+            color: #999;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="yellowband">
+            <h1>COMPANY</h1>
+        </div>
+        <div class="maincontainer">
+            <div class="offer-text">LAST OFFER</div>
+            <div class="button"><a href="#">SHOP NOW</a></div>
+        </div>
+        <div class="products-container">
+            <div class="product">
+                <img src="4.jpg" alt="Black sneakers">
+                <div class="pink-overlay">
+                    <div class="collection-title">SIMILAR COLLECTION</div>
+                    <div class="collection-subtitle">Lorem ipsum is simply dummy text</div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="1.jpg" alt="Two women sitting">
+            </div>
+            <div class="product">
+                <img src="2.jpg" alt="Hands with wallet">
+            </div>
+            <div class="product">
+                <div class="discount-box">
+                    <div class="discount-amount">50%<span>OFF</span></div>
+                    <div class="discount-text">Lorem ipsum is simply dummy text for printing and typesetting industry</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="follow-text">FOLLOW US</div>
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">in</div>
+                <div class="social-icon">t</div>
+                <div class="social-icon">p</div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-text">
+                Lorem ipsum is simply dummy text for printing and typesetting industry
+            </div>
+        </div>
+    </div>
+</body>
+</html>
